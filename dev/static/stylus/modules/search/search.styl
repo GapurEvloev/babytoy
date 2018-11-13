@@ -1,0 +1,89 @@
+.search
+	position: relative
+	display inline-block
+	margin-left auto
+	height 20px
+	&.search--open
+		.search__body
+			display: block
+			z-index: 5
+	&__icon
+		width 20px
+		height 20px
+		fill blaze-orange
+		margin-left auto
+		display inline
+		cursor pointer
+	&__body
+		position: absolute
+		right 0
+		top -35px
+		width 550px
+		display: none
+		padding 20px
+		background-color #fff
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+	&__form
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+	&__input
+		height 50px
+		width 100%
+		line-height 48
+		border: 1px solid alto
+		border-right: none
+		border-radius 2px 0 0 2px
+		background-color transparent
+		padding: 0 60px 0 20px
+		font-size 14px
+		&::placeholder
+			color placeholder-color
+		&-wrapper
+			position: relative
+			flex 1
+	&__clear
+		bottom 0
+		top 0
+		position absolute
+		right 0
+		width 50px
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		justify-content center
+		cursor: pointer
+		z-index 1 
+		&-icon
+			fill rgba(75, 75, 75, .5)
+			height 16px
+			width 16px
+	&__btn
+		flex 0 0 auto
+		border none
+		background-color: blaze-orange
+		color white
+		padding 0 15px
+		height 50px
+		font-weight 500
+		font-size 14px
+		cursor pointer
+		border-radius 0 4px 4px 0
+
+
+
+
+
+
+
+
+
+
+
+

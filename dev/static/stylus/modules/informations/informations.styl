@@ -1,0 +1,36 @@
+@import 'news'
+@import 'review'
+@import 'brands.styl'
+
+.information
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	& > *
+		flex 1px
+		padding-right 30px	
+		&:last-child
+			padding-right 0
+	&-item
+		&__body
+			margin-bottom 20px
+			height 250px
+		&__link
+			display inline-block
+			color mine-shift 
+			border-bottom 1px solid rgba(38, 38, 38, .15)
+		&__footer
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			& > *
+				margin-right 5px
+				&:last-child
+					margin-right 0
+		&__count
+			color chaelce-cucumber
+			
