@@ -1,5 +1,41 @@
+mixin footerNavLink(link,text)
+	li.footer-nav__item
+		a(href=link).footer-nav__link=text
 footer.footer
 	.footer__main
+		.container
+			.footer__navigation
+				.footer__item
+					ul.footer-nav
+						+footerNavLink('','Самокаты')
+						+footerNavLink('','Беговелы')
+						+footerNavLink('','Велосипеды')
+						+footerNavLink('','Ролики')
+						+footerNavLink('','Скейты')
+						+footerNavLink('','Батуты')
+						+footerNavLink('','Детский спорт и отдых')
+						+footerNavLink('','Аксессуары и запчасти ')
+				.footer__item
+					ul.footer-nav
+						+footerNavLink('','О компании')
+						+footerNavLink('','Доставка')
+						+footerNavLink('','Оплата')
+						+footerNavLink('','Поставщикам')
+						+footerNavLink('','Новости')
+						+footerNavLink('','Отзывы')
+				.footer__item
+					ul.footer-nav
+						+footerNavLink('','Контакты')
+						+footerNavLink('','Вопросы и ответы')
+						+footerNavLink('','Карта сайта')
+
+					span.footer__address Москва, пр-кт Андропова, д. 11, к. 2, пав. № 1/2
+			.footer__contacts
+				.footer__phones
+					a(href="tel:88007077077").footer__phone +7 (800) 707 70 77
+					span.footer__text Звонок бесплатный
+					a(href="tel:88007647676").footer__text +7 (800) 764 76 76
+				a(href="mailto:sale@gapgapevl.ru").footer__mail sale@gapgapevl.ru
 	.footer__socials
 		.container
 			ul.socials
@@ -21,7 +57,7 @@ footer.footer
 						span.socials__name Вконтакте
 			.yandex-market
 				img(src="static/img/general/socials/yandex.svg" alt="Яндекс Маркет")
-				a(href="#").btn Оставить отзыв
+				a(href="#").btn.btn--small.btn--transparent-gray.btn--inline Оставить отзыв
 	.footer__bottom
 		.container
 			span.copyright &copy; 2010-2018 «Baby-Toys». Все права защищены. Информация сайта защищена законом об авторских правах.
